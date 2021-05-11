@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "live-server --port=3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ssinare/27--grupe--8-coming-soon/issues"
   },
-  "homepage": "https://github.com/ssinare/27--grupe--8-coming-soon#readme"
+  "homepage": "https://github.com/ssinare/27--grupe--8-coming-soon#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
