@@ -19,21 +19,18 @@ function renderClock(selector, targetDate) {
                      <div class="title">${titles[i]}</div>
                 </div>`;
      }
-      
     // result return
      DOM.innerHTML = HTML;
 
-     const allValueDOM = DOM.querySelectorAll('.value');
+     const allValueDOM = DOM.querySelectorAll('.value'); // daugkartine
      console.log(allValueDOM);
 
     setInterval(function ( ) {
         updateClock(allValueDOM, calcDeadline(targetDate));
         console.log('update');
-
-    }, 1000);          // daugkartine
+    }, 1000);         //skaiciuoja karta i sekunde, updateina 
 
  // setTimeout();           // vienkartine
- 
 }
 
 export { renderClock }
