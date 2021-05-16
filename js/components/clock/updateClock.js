@@ -1,4 +1,4 @@
-  
+import { formatNumber } from './formatNumber.js';  
 
 /**
  * 
@@ -8,12 +8,12 @@
 
 function updateClock(DOMelements, timeValues) {
     console.log('atnaujinamas laikas...');
-   console.log(DOMelements);
+    console.log(DOMelements);
     console.log(timeValues);
 
     for (let i= 0; i < DOMelements.length; i++){
-const formatNumber = i > 0 ? formatNumber(timeValues[i]) : (timeValues[i]);
-
+        const formatedNumber = i > 0 ? formatNumber(timeValues[i]) : timeValues[i];
+        DOMelements[i].innerText = formatedNumber;
     }
 }
 
