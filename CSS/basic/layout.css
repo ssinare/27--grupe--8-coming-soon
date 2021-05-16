@@ -8,13 +8,14 @@
   display: inline-block;
   width: 600px;
   margin-left: calc(50% - 300px);
+ 
 }
 
 .container > .row-big {
   display: inline-block;
   width: 1000px;
   margin-left: calc(50% - 500px);
-}
+  }
 
 .container .left-column {
   width: 50%;
