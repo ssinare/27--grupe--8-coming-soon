@@ -23,11 +23,11 @@ function renderClock(selector, targetDate) {
      DOM.innerHTML = HTML;
 
      const allValueDOM = DOM.querySelectorAll('.value'); // daugkartine
-     console.log(allValueDOM);
+     //console.log(allValueDOM);
 
     setInterval(function ( ) {
         updateClock(allValueDOM, calcDeadline(targetDate));
-        console.log('update');
+      //  console.log('update');
     }, 1000);         //skaiciuoja karta i sekunde, updateina 
 
  // setTimeout();           // vienkartine

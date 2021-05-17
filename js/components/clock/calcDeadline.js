@@ -16,7 +16,7 @@ function calcDeadline(targetDate) {             // 04-19 10:00:00
     const timeLeftInMiliseconds = timeInMiliseconds - now;
     let timeLeftInseconds = Math.round(timeLeftInMiliseconds / 1000);
 
-    console.log(timeInMiliseconds);
+    //console.log(timeInMiliseconds);
     const days = Math.floor(timeLeftInseconds / 60 / 60 / 24);
     timeLeftInseconds -= days * 60 * 60 * 24;
 
