@@ -16,7 +16,7 @@ const socialsData = [
     },
     {
         href: '#',
-        icon: 'dribbbl',
+        icon: 'dribbble',
         active: true
     },
     {
