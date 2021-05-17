@@ -4,6 +4,7 @@
 @import './basic/layout.css';
 
 /* component styles */
+@import '../CSS/3rd-party/font-awesome.min.css';
 @import './components/button.css';
 @import './components/clock.css';
 @import './components/form.css';
