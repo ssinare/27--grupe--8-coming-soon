@@ -1,0 +1,45 @@
+.mouse {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    border: 15px solid #fff;
+    border-radius: 100px;
+}
+.mouse > .wheel {
+    display: inline-block;
+    width: 15px;
+    height: 25px;
+    margin-top: 50px;  
+    background-color: #fff;
+    border-radius: 8px;
+    animation-name: scrolling; 
+    animation-duration: 42s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(140px);
+    }
+}
