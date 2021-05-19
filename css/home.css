@@ -117,3 +117,50 @@ footer.container {
   top: -26px;
   right: -12px;
 }
+
+footer.container > .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: #fff8;
+  font-size: 17px;
+  line-height: 1.7em;
+}
+.footer-logo {
+  margin: 30px 0;
+
+}
+.triple {
+  display: flex;
+  gap: 0 30px;  
+}
+.triple > p {
+  position: relative;
+}
+.triple > p + p::before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 1px; 
+  height: 15px; 
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  
+}
+footer > .row {
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 640px) {
+  .triple {
+    flex-direction: column;
+  }
+  .triple > p + p ::before {
+    display: none;
+  }
+}
