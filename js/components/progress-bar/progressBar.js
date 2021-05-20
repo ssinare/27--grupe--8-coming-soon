@@ -22,7 +22,20 @@ function progressBar(selector, data) {
     //result return
     //DOM.innerHTML += HTML; // butinai =+, nes kitaip galima pamesti turini, tiesiog perrasyti naujais ant virsaus
     DOM.insertAdjacentHTML('beforeend', HTML);
+//afterend
+const allProgressBarDOM = DOM.querySelectorAll('.progress-bar');
+console.log(allProgressBarDOM);
 
+//event
+document.addEventListener('scroll', () => {
+    console.log(scrollY);
+    for (const bar of allProgressBarDOM) {
+        if (bar.offsetTop + bar.offsetHeight <= scrollY + innerHeight) {
+            bar.classlist.add ('animate');
+            console.log(fff);
+        }
+    }
+})
 }
 
 export { progressBar }
