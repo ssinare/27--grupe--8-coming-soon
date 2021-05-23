@@ -23,6 +23,24 @@ function progressBar(selector, data) {
     //DOM.innerHTML += HTML; // butinai =+, nes kitaip galima pamesti turini, tiesiog perrasyti naujais ant virsaus
     DOM.insertAdjacentHTML('beforeend', HTML);
 
+    const allProgressBarDOM = document.querySelectorAll('.progress-bar');
+
+     //event
+    const animate = () => {
+      //console.log('ggfnmokhof');
+        let animatedElementsCount = 0;  
+        for (const bar of allProgressBarDOM) {
+            if (bar.offsetTop + bar.offsetHeight <= scrollY + innerHeight) {
+                bar.classList.add('animate');
+                animatedElementsCount++;
+            }
+        }
+
+        if (animatedElementsCount === allProgressBarDOM.length) {
+            document.removeEventListener('scroll', animate);
+        } 
+    }   
+    document.addEventListener('scroll', animate);
 }
 
 export { progressBar }
