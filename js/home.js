@@ -8,21 +8,29 @@ renderClock('#hero_clock', '04-19 10:00:00');
 socials('#socials_block', socialsData);
 progressBar('.left-column', progressBarData);
 
-/*const socialsDOM = null;
-const socialsTop = 0;
-const socialsHeight = 0;
+
+//pvz su 'socials', kaip jie pradeda matytis, keiciantis matomo ekrano auksciui
+/*const socialsDom = document.querySelector('.socials');
+console.log([socialsDom]); 
+const socialsTop = socialsDom.offsetTop;
+const socialsHeight = socialsDom.offsetHeight;
 const windowHeight = 0;
 
+
 addEventListener('scroll', () => {
+    console.log(socialsTop + socialsHeight, scrollY + windowHeight);
     if (socialsTop + socialsHeight <=  scrollY + innerHeight) {
-        console.log(matomas);
-    else
-    console.log(ne-matomas);
+        console.log('matomas'); 
+    }
+    else {
+    console.log('ne-matomas');
 
     }
 })
 
 */
+
+
 
 
 
