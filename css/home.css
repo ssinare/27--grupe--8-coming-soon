@@ -139,6 +139,7 @@ footer.container > .row {
 .triple > p {
   position: relative;
 }
+/*
 .triple > p + p::before {
   content: '';
   display: inline-block;
@@ -152,6 +153,7 @@ footer.container > .row {
   transform: translateY(-50%);
   
 }
+*/
 footer > .row {
   color: #fff;
   text-decoration: none;
